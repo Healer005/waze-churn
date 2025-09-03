@@ -18,7 +18,8 @@ The Python code performs the following:
 
 1. **Data Preprocessing**:
    - Loaded `waze_dataset.csv` and dropped 700 rows with missing `label` values.
-   - Encoded 'label' as 1 (Churned) and 0 (Retained) `device` as 1 (iPhone) and 0 (Android).
+   - Encoded `label` as 0 (retained) and 1 (churned).
+   - Encoded `device` as 1 (iPhone) and 0 (Android).
    - Scaled numeric features using `StandardScaler`.
 
 2. **Modeling**:
